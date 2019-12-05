@@ -1,0 +1,171 @@
+@import "vars";
+@import "global";
+@import "fonts";
+
+.logo {
+    float: left;
+}
+.header {
+    padding: 20px 0 18px 0;
+
+    &__contacts {
+        float: right;
+        width: 160px;
+        margin-right: 40px;
+        &__number {
+            font-size: 18px;
+            a {
+                color: $black;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+    }
+    &__email {
+        color: #368c02;
+       
+    }
+    &__btn  {
+        padding: 11px 21px;
+        margin-top: 10px;
+        @include red_button;
+    }
+    &__email-button__wrap {
+        width: 190px;
+        float: right;
+    }
+}
+.menu {
+    background: #3da001;
+    &__list {
+        display: flex;
+        height: 40px;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 120px;
+        font-size: 18px;
+    }
+    &__link {
+        color: $white;
+    }
+}
+.main-page {
+    background: url(../images/bg_1.jpg) no-repeat center center;
+
+    .container {
+        padding-top: 78px;
+        text-align: center;
+    }
+    &__header {
+        margin: 0 auto 6px auto;
+        padding: 0 30px;
+        line-height: 68px;
+        display: inline-block;
+        text-transform: uppercase;
+        background: linear-gradient(to bottom, #44b400, #3a9702);
+    }
+    &__text {
+        width: 600px;
+        padding-bottom: 120px;
+        text-align: center;
+        display: inline-block;
+        padding-top: 60px;
+        font-size: 29px;
+        line-height: 33px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__form {
+        background: white;
+        display: inline-block;
+        box-shadow: 7px 7px 23px 9px rgba(237,237,237,1);
+        width: 640px;
+        height: 300px;
+        &__header {
+            font-size: 30px;
+            padding: 46px 0 41px 0;
+            text-transform: uppercase;
+        }
+        &__input {
+            background: #f7f7f7;
+            width: 260px;
+            height: 55px;
+            @include form__input;
+        }
+        &__input:first-child {
+            margin-right: 20px;
+        }
+        &__btn {
+            padding: 20px 78px;
+            margin: 37px 0 43px 0;
+            font-size: 20px;
+            @include red_button;
+        }
+    }    
+}
+.about {
+    text-align: center;
+    padding: 120px 0 80px 0;
+
+    &__list {
+        padding-top: 70px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item {
+        font-size: 18px;
+        width: 190px;
+    }
+    &__text {
+        color: $black;
+        &__header {
+            padding-top: 20px;
+            font-weight: 700;
+        }
+    }
+}
+.get-sale {
+    background: url(../images/bg_2.jpg) no-repeat center center;
+    height: 590px;
+    text-align: center;
+    padding-top: 80px;
+    &__content {
+        float: right;
+        width: 600px;
+    }
+    &__text {
+        font-size: 33px;
+        line-height: 36px;
+        color: $white;
+        padding: 20px 0 30px 0;
+    }
+    &__form__input {
+        width: 410px;
+        height: 55px;
+        margin-bottom: 10px;
+        @include form__input;
+    }
+    &__form__btn {
+        background: linear-gradient(to bottom, #44b300, #3b9902);
+        border-radius: 4px;
+        border-bottom: 1px solid #2d7700;
+        border: none;
+        margin-top: 11px;
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 410px;
+        height: 60px;
+    }
+    &__form__btn::after {
+        content: "";
+        border-bottom: 1px solid #307d00;
+    }
+}
+.counter {
+    background: url(../images/bg__red.jpg) repeat center center;
+    height: 120px;
+    box-shadow: inset 0px 10px 14px 0px rgba(129,10,19,1);
+}
