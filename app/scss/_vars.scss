@@ -34,3 +34,16 @@ $gray: #f4f6f5;
     padding-left: 18px;
     color: #626262;
 }
+@mixin h2 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+  }
+  @mixin h3 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    //color: #132d03;
+  }

@@ -61,7 +61,6 @@
         padding: 0 30px;
         line-height: 68px;
         display: inline-block;
-        text-transform: uppercase;
         background: linear-gradient(to bottom, #44b400, #3a9702);
     }
     &__text {
@@ -108,6 +107,10 @@
     text-align: center;
     padding: 120px 0 80px 0;
 
+    &__header {
+        @include h3;
+        color: #132d03;
+    }
     &__list {
         padding-top: 70px;
         display: flex;
@@ -166,6 +169,161 @@
 }
 .counter {
     background: url(../images/bg__red.jpg) repeat center center;
-    height: 120px;
+    font-size: 40px;
+    font-weight: bold;
+    
     box-shadow: inset 0px 10px 14px 0px rgba(129,10,19,1);
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 120px;
+    }
+    &__text {
+        text-transform: uppercase;
+        color: $white;
+        padding: 0 50px;
+    }
+    &__number {
+        color: #464646;
+        position: absolute;
+        top: 16px;
+        left: 11px;
+        &__wrap {
+            width: 45px;
+            height: 60px;
+            background: white;
+            margin-right: 5px;
+            border-radius: 9px;
+            box-shadow: 0px 10px 13px 0px rgba(136,11,20,1);
+            position: relative;
+            
+        }
+    }
+}
+.effective-kits {
+    background: url(../images/bg_3.jpg) no-repeat center center;
+    text-align: center;
+    .container {
+        padding: 80px 0 75px 0;
+    }
+    &__header {
+        @include h3;
+    }
+    &__text {
+        font-size: 18px;
+        color: $white;
+        padding: 17px 0 55px 0;
+    }
+}
+.effective-kit {
+    &__item {
+        background: white;
+        display: inline-block;
+        padding: 30px 45px 30px 65px;  
+        height: 380px;
+        width: 460px;
+    }
+    &__item:first-child {
+        margin-right: 20px;
+    }
+    &__availability-list {
+        float: right;
+        text-align: left;
+    }
+    &__availability-item {
+        font-size: 16px;
+    }
+    &__availability-item::before {
+        content: url(../images/icon_tree.png);
+    }
+    &__description {
+        font-size: 20px;
+        text-align: center;
+        width: 238px;
+        margin-top: 25px;
+        display: inline-block;
+        span {
+            font-weight: bold;
+        }
+    }
+    &__btn {
+        margin-top: 30px;
+        width: 220px;
+        height: 45px;
+        @include red_button;
+    }
+}
+.trees__image {
+    float: left;
+    display: block;
+}
+.reviews {
+    margin-bottom: 145px;
+    &__header {
+        @include h3;
+        text-align: center;
+        color: #132d03;
+        padding: 80px 0;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 48px;
+        width: 475px;
+    }
+    &__userpic {
+        margin-top: 7px;
+    }
+    &__details {
+        width: 300px;
+        padding-left: 20px;
+    }
+    &__btn {
+        margin-top: 19px;
+        background: linear-gradient(to bottom, #44b300, #3b9902);
+        border-radius: 4px;
+        border-bottom: 1px solid #2d7700;
+        border: none;
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 100%;
+        height: 50px;
+
+    }
+    &__initials {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+.our-production {
+    background: url(../images/bg_4.png) no-repeat center center;
+    //height: 470px;
+    &__header {
+        text-align: center;
+        color: $text !important; 
+        padding-bottom: 80px;
+        @include h3;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__text {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 10px;
+        padding-bottom: 80px;
+    }
+}
+.catalog-artificial {
+    background: url(../images/bg_5.jpg) no-repeat center center;
+    height: 1155px;
 }
