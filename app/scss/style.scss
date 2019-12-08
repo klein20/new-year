@@ -324,6 +324,106 @@
     }
 }
 .catalog-artificial {
+    text-align: center;
     background: url(../images/bg_5.jpg) no-repeat center center;
     height: 1155px;
+
+    &__header {
+        padding: 80px 0;
+        @include h3;
+    }
+
+}
+.catalog {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 220px;
+        height: 360px;
+        background: white;
+        margin-bottom: 95px;
+        &__header {
+            font-size: 16px;
+            line-height: 20px;
+            display: inline-block;
+            width: 115px;
+        }
+        &__description {
+            line-height: 20px;
+            width: 165px;
+            display: inline-block;
+            color: #717171;
+        }
+    }
+    &__item:not(:nth-child(4n)) {
+        margin-right: 20px;
+    }
+    &__image {
+        padding: 10px 10px 5px 10px;
+    }
+    &__text {
+        line-height: 20px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__text:last-child {
+        padding-bottom: 25px;
+    }
+    &__btn {
+        @include red_button;
+        font-size: 20px;
+        box-shadow: none;
+        width: 220px;
+        height: 55px;
+        margin-top: 45px;
+        z-index: 10;
+        position: relative;
+    }
+}
+.catalog-living {
+    background: #f4f4f4;
+    height: 700px;
+    text-align: center;
+
+    &__header {
+        @include h3;
+        padding: 80px 0;
+        color: #132d03;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.catalog-with-candy {
+    background: url(../images/bg_6.jpg) no-repeat center center;
+    height: 700px;
+    text-align: center;
+
+    &__header {
+        @include h3;
+        padding: 80px 0;
+    }
+    &__list {
+        display: inline-flex;
+        margin: 0 auto;
+    }
+}
+.catalog-decoration {
+    background: #f4f4f4;
+    height: 700px;
+    text-align: center;
+
+    &__header {
+        @include h3;
+        padding: 80px 0;
+        color: #132d03;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
 }
