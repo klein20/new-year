@@ -30,13 +30,15 @@
             </div>
         </div>
     </header>
-    <div class="menu">
+
+
+     <div class="menu">
         <div class="container">
             <ul class="menu__list">                     
-                <li><a class="menu__link" href="#">Искусственные елки</a></li>
-                <li><a class="menu__link" href="#">Живые елки</a></li>
-                <li><a class="menu__link" href="#">Елочки из конфет</a></li>
-                <li><a class="menu__link" href="#">Украшения для елок</a></li>
+                <li><a class="menu__link" href="#catalog-artificial">Искусственные елки</a></li>
+                <li><a class="menu__link" href="#catalog-living">Живые елки</a></li>
+                <li><a class="menu__link" href="#catalog-with-candy">Елочки из конфет</a></li>
+                <li><a class="menu__link" href="#catalog-decoration">Украшения для елок</a></li>
             </ul>
         </div>
     </div>
@@ -44,7 +46,7 @@
         <div class="container">
             <h2 class="main-page__header h2__header">Используйте все возможности</h2>
             <h2 class="main-page__header h2__header size44">приближающегося праздника!</h2>
-            <p class="main-page__text">Закажите новогодний набор сейчас и получите дополнительную <span>скидку 15%</span> от оптовых цен!</p>
+            <p class="main-page__text">Закажите новогодний набор сейчас и получите <br> дополнительную <span>скидку 15%</span> от оптовых цен!</p>
             <form class="main-page__form">
                 <h3 class="main-page__form__header">Получи оптовые цены сейчас</h3>
                 <label class="main-page__form__label">
@@ -55,7 +57,7 @@
             </form>
         </div>
     </section>
-        <section class="about">
+    <section class="about">
             <div class="container">
                 <h3 class="about__header">О нас</h3>
                 <ul class="about__list">
@@ -93,8 +95,8 @@
         <section class="get-sale">
             <div class="container">
                 <div class="get-sale__content">
-                    <h2 class="h2__header">Закажите до 10 ноября</h2>
-                    <p class="get-sale__text">на сумму от 100 000 рублей и получите дополнительную скидку 15%</p>
+                    <h2 class="get-sale__header h2__header">Закажите до 10 ноября</h2>
+                    <p class="get-sale__text">на сумму от 100 000 рублей <br> и получите дополнительную скидку 15%</p>
                     <p class="get-sale__text">В декабре скидка 5%</p>
                     <form class="get-sale__form">
                         <label class="get-sale__form__label">
@@ -110,11 +112,8 @@
             <div class="container">
                 <div class="counter__wrap">
                     <p class="counter__text">У нас уже заказали:</p>
-                    <div class="counter__number__wrap">
-                        <span class="counter__number">1</span>
-                    </div>
-                    <div class="counter__number__wrap">
-                        <span class="counter__number">5</span>
+                    <div class="counter__number__wrap" id="counter">
+                        <div data-num="115" class="counter__number number">0</div>
                     </div>
                     <p class="counter__text">человек</p>
                 </div>
@@ -250,7 +249,7 @@
                 </ul>
             </div>
         </section>
-        <section class="catalog-artificial">
+        <section id="catalog-artificial" class="catalog-artificial">
             <div class="container">
                 <h3 class="catalog-artificial__header">Каталог искусственных елок</h3>
                 <ul class="catalog__list">
@@ -353,7 +352,7 @@
                 </ul>
             </div>
         </section>
-        <section class="catalog-living">
+        <section id="catalog-living" class="catalog-living">
             <div class="container">
                 <h3 class="catalog-living__header">Каталог живых елок</h3>
                 <ul class="catalog-living__list">
@@ -408,7 +407,7 @@
                 </ul>
             </div>
         </section>
-        <section class="catalog-with-candy">
+        <section id="catalog-with-candy" class="catalog-with-candy">
             <div class="container">
                 <h3 class="catalog-with-candy__header">каталог елочок из канфет</h3>
                 <ul class="catalog-with-candy__list">
@@ -451,7 +450,7 @@
                 </ul>
             </div>
         </section>
-        <section class="catalog-decoration">
+        <section id="catalog-decoration" class="catalog-decoration">
             <div class="container">
                 <h3 class="catalog-decoration__header">Каталог украшений для елок</h3>
                 <ul class="catalog-decoration__list">
@@ -506,7 +505,36 @@
                 </ul>
             </div>
         </section>  
-    <script src="js/main.js"></script>
+        <section class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.52223239639!2d37.64418411573657!3d55.7146760023996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b3a781691db%3A0xe722e2b1e5e8154e!2z0J_QsNCy0LXQu9C10YbQutCw0Y8g0L3QsNCxLiwgMiDRgdGC0YDQvtC10L3QuNC1IDUsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTUxMTQ!5e0!3m2!1sru!2sua!4v1575809568184!5m2!1sru!2sua" width="100%" height="410" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="container">
+                <div class="card__contacts clearfix">
+                    <h3 class="card__contacts__header">Контакты</h3>
+                    <p class="card__loctext">Москва, Павелецкая наб., <br> дом 2, строение 5</p>
+                    <p class="card__work-time__text">Работаем без выходных <br> с 9:00 до 18:00</p>
+                    <p class="card__number">8 (499) 136-44-76</p>
+                </div>
+            </div>
+        </section>
+        <div class="header">
+                <div class="container clearfix">
+                    <a class="logo" href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <div class="header__email-button__wrap">
+                        <a class="header__email" href="#">info@elockagori.ru</a>
+                        <button class="header__btn">Заказать дзвонок</button>
+                    </div>
+                    <div class="header__contacts">
+                        <span class="header__contacts__text">Есть вопросы? Звоните!</span>
+                        <p class="header__contacts__number"><a href="tel:88002004017">8 (800) 200-40-17</a></p>
+                        <p class="header__contacts__number"><a href="tel:+74994041431">+7 (499) 404-14-31</a></p>
+                    </div>
+                </div>
+            </div> 
+<script src="js/main.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/numcount.js"></script>
 </body>
 
 </html>
