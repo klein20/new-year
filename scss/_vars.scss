@@ -1,0 +1,50 @@
+$text: #000000;
+$black: #0d0d0d;
+$white: #ffffff;
+$red: #e74c3c;
+$green: #8bc34a;
+$bg: #263238;
+$gray: #f4f6f5;
+
+
+@mixin f500{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+@mixin f700{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+@mixin red_button {
+    background: linear-gradient(to bottom, #e00000, #870202);
+    border-radius: 4px;
+    border-bottom: 1px solid #640000;
+    border: none;
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0px 10px 12px 0px rgba(223,223,223,1);
+}
+@mixin form__input {
+    border-radius: 4px;
+    border: 1px solid #d0d0d0;
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 18px;
+    color: #626262;
+}
+@mixin h2 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+  }
+  @mixin h3 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    //color: #132d03;
+  }
